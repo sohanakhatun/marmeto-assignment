@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Category Tabs</title>
+  </head>
+
+  <body>
+    <div class="main-div">
+      <div>
+        <p class="heading">SELECT YOUR CHOICE</p>
+        <div class="btn-div">
+          <button
+            class="category-btn active-btn"
+            id="menBtn"
+            onclick="showCategory('Men')"
+          >
+            <img
+              src="./assests/men-icon.png"
+              class="icon active-icon"
+              id="menIcon"
+            />
+            Men
+          </button>
+          <button
+            class="category-btn"
+            id="womenBtn"
+            onclick="showCategory('Women')"
+          >
+            <img src="./assests/women-icon.png" class="icon" id="womenIcon" />
+            Women
+          </button>
+          <button
+            class="category-btn"
+            id="kidsBtn"
+            onclick="showCategory('Kids')"
+          >
+            <img src="./assests/children-icon.png" class="icon" id="kidsIcon" />
+            Kids
+          </button>
+        </div>
+      </div>
+      <div id="product-container" class="product-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
